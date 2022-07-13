@@ -11,6 +11,16 @@ The first use of the algorithm is through the constructor of the context object,
 in other cases the algorithm is set through the setStrategy method.
 That is, the change of algorithms is performed when the object is running, at runtime.
 The project outputs the result to the browser.
+
+The interaction of the context object and algorithms goes through the interface:
+```
+interface MyStrategyInterface
+{
+	public function calculate(array $source, int $number): array;
+}
+```
+
+The output:
 ```
 Pervious array:
 
